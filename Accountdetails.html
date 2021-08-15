@@ -1,0 +1,118 @@
+<html>
+<head>
+<link rel="stylesheet" href="CSS/style9.css">
+<link rel="stylesheet" href="CSS/stylee.css">
+<script src="jquery-3.3.1.js"></script>
+<style>
+
+
+table
+{
+	background-color:white;
+	height:auto; 
+	width:780px;
+	border:1px solid black;
+	margin-top:200px;
+	margin-left:200px;
+}
+
+table tr:nth-child(odd) 
+{
+  background-color: #f2f2f2;
+}
+
+table th
+{
+	height:40px; 
+	width:140px;
+	background-color:gainsboro;
+	font-weight:bold;
+	font-size:17px;
+	text-align:center;
+	border-bottom:2px solid gray;
+}
+
+table td
+{
+	height:40px; 
+	width:140px;
+	font-weight:normal;
+	font-size:17px;
+    text-align:center;
+	border-bottom:2px solid gray;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<nav>
+<img src="Pictures/logo.png" style="float:left ; margin-top:0px; margin-right:10px; height:80px; width:80px;"/>
+<h1>Canara Bank</h1>
+<ul>
+<li><a class="homeblack"   href="home.html">Home</a>
+<li><a class="homered homeblack" href="index.html">Log In</a>
+<li><a class="homeblack" href="signup.html">Sign Up</a>
+<li><a class="homeblack" href="contact.html">Contact Us</a>
+</ul>
+</nav>
+</header>
+<div class="divider"></div>
+<aside class="sidebar">
+<ul>
+<li><a class="homeblack" href="Accountdetails.html">Account Details</a></li>
+<li><a class="homeblack" href="TransferDetails">Transaction Details</a></li>
+<li><a class="homeblack " href="DebitHistory">Debit History</a></li>
+<li><a class="homeblack" href="CreditHistory">Credit History</a></li>
+<li><a class="homeblack" href="LogoutServlet">LogOut </a></li>
+
+</ul>
+</aside><div class="image">
+<form action="userdata" style="margin-top:-340px; margin-left:450px; width:600px;">
+<br><input type="submit" value="view"  style="width:100px;" class="singupbutton"/>
+</form>
+</div>
+<div class='table1'>
+
+</div>
+<script>
+
+
+
+if($("table").hasClass("ttable"))
+{
+$(".ttable").hide();
+
+$(".table1").append("<table class='Time_table' border='1'><tr><th><b>Serial No.</b></th><th><b>User Name</b></th><th><b>Account No. </b> </th><th><b>Aadhar No.</b></th><th><b>Mobile No.</b></th><th><b>Email Id</b></th> <th><b>Father Name</b></th><th><b>Account Type</b></th><th><b>Balance</b></th><th><b>Gender</b></th><th><b><a href='update.html'>Update</a></b></th></tr></table>");
+
+var rows = (($(".ttable tr").length) -1 );
+var cols = 11;
+var sub="";
+for(var i=1;i<=rows;i++)
+{
+      $(".Time_table").append("<tr></tr>");
+
+  for(var j=0;j<cols;j++)
+  {
+     sub=$(".ttable tr:nth("+i+") td:nth("+j+")").text();
+	 $(".Time_table tr:nth("+i+")").append("<td>"+sub+"</td>");
+  
+  }
+
+
+}
+
+}
+
+if($("p").hasClass("error"))
+{
+$(".error").hide();
+var name = $(".error").text();
+
+alert(name);
+
+}
+</script>
+</body>
+</html>

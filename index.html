@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel="stylesheet" href="CSS/style1.css">
+<script src="jquery-3.3.1.js"></script>
+
+</head>
+<body>
+<header>
+<nav>
+<img src="Pictures/logo.png" style="float:left ; margin-top:0px; margin-right:10px; height:80px; width:80px;"/>
+<h1>Canara Bank</h1>
+<ul>
+<li><a class="homeblack"   href="home.html">Home</a></li>
+<li><a class="homered homeblack" href="index.html">Log In</a></li>
+<li><a class="homeblack" href="signup.html">Sign Up</a></li>
+<li><a class="homeblack" href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="divider"></div>
+<div class="image">
+<form action="login" >
+<p class="heading3">USER TYPE
+         <select name="type" class=inps3>
+		 <option value="Admin">Admin</option>
+		  <option value="User">User</option>
+		 
+		 </select></p>
+		<p class="heading1">USERNAME&nbsp;
+		 <input type="text" name="txtname" class="inps1"/></p>
+		 <p class="heading2">PASSWORD&nbsp;
+		 		<input type="password" name="passname" class="inps2"/>
+		<br><input type="submit" value="Login" class="loginbutton"/></p>
+		</form>
+		</div>
+		
+<script>
+
+
+if($("p").hasClass("error"))
+{
+$(".error").hide();
+var name = $(".error").text();
+
+alert(name);
+
+}
+</script>
+</body>
+</html>
+
