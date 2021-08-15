@@ -1,0 +1,310 @@
+<web-app>
+
+<servlet>
+    <servlet-name>
+      login
+    </servlet-name>
+	<servlet-class>
+ 	  LoginServlet
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  login
+	</servlet-name>
+    <url-pattern>
+	 login
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      signUp
+    </servlet-name>
+	<servlet-class>
+ 	  SignUp
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  signUp
+	</servlet-name>
+    <url-pattern>
+	 signup
+	</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>
+      sample1
+    </servlet-name>
+	<servlet-class>
+ 	  VisitServlet
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample1
+	</servlet-name>
+    <url-pattern>
+	 visit
+	</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>
+      sample2
+    </servlet-name>
+	<servlet-class>
+ 	  NewAccountDetails
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample2
+	</servlet-name>
+    <url-pattern>
+	 newDetails
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample3
+    </servlet-name>
+	<servlet-class>
+       ChangePassword 	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample3
+	</servlet-name>
+    <url-pattern>
+	 changepass
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample7
+    </servlet-name>
+	<servlet-class>
+       Credit1 	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample7
+	</servlet-name>
+    <url-pattern>
+	 addbalance
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample8
+    </servlet-name>
+	<servlet-class>
+       Debit1 	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample8
+	</servlet-name>
+    <url-pattern>
+	 cutbalance
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample5
+    </servlet-name>
+	<servlet-class>
+      CheckBalance 	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample5
+	</servlet-name>
+    <url-pattern>
+	 balance
+	</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>
+      sample6
+    </servlet-name>
+	<servlet-class>
+      TransferMoney 	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample6
+	</servlet-name>
+    <url-pattern>
+	 transfer
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample10
+    </servlet-name>
+	<servlet-class>
+       ChangePass	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample10
+	</servlet-name>
+    <url-pattern>
+	 changepass
+	</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>
+      sample11
+    </servlet-name>
+	<servlet-class>
+      TransferDetails	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample11
+	</servlet-name>
+    <url-pattern>
+	 /TransferDetails
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample12
+    </servlet-name>
+	<servlet-class>
+      UpdateAccountData	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample12
+	</servlet-name>
+    <url-pattern>
+	 update
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample13
+    </servlet-name>
+	<servlet-class>
+      AccountDetails	  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample13
+	</servlet-name>
+    <url-pattern>
+	userdata
+	</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>
+      sample14
+    </servlet-name>
+	<servlet-class>
+    LogoutServlet  
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample14
+	</servlet-name>
+    <url-pattern>
+	 /LogoutServlet
+	</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>
+      sample15
+    </servlet-name>
+	<servlet-class>
+    CreditHistory
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample15
+	</servlet-name>
+    <url-pattern>
+	 /CreditHistory
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sample16
+    </servlet-name>
+	<servlet-class>
+    DebitHistory
+	  </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+	  sample16
+	</servlet-name>
+    <url-pattern>
+	 /DebitHistory
+	</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>
+      sendemail1
+    </servlet-name>
+	<servlet-class>
+ 	 SendEmail
+	</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>
+      sendemail1
+	</servlet-name>
+    <url-pattern>
+		send
+	 </url-pattern>
+</servlet-mapping>
+
+
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+</web-app>

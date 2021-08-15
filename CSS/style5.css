@@ -1,0 +1,85 @@
+body{
+  margin:0;
+}
+body{
+background-image:url('../1.jpg');
+ background-repeat: no-repeat;
+  background-size: cover;
+ height:100%;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+body input:hover
+{
+	border:2px solid black;
+}
+header{
+
+  background-color:white;
+  padding:8px 0px 6px 40px;
+  height:100px;
+}
+form
+{
+	border:2px solid black; 
+	width:50%; 
+	height:50%; 
+	margin-top:-23%;
+	padding:40px;
+	margin-left:33%;
+	background-color:#E5E5E5;
+}
+header h1{
+
+	font-size:50px;
+	float:left;
+	margin-top:20px;
+	margin-right:20px;
+	color:#40B6EC;
+}
+nav ul{
+	padding:0;
+	text-align:right;
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	text-align:right;
+	margin-right:12px;
+		margin-top:3%;
+
+}
+nav ul li a{
+	text-align:right;
+	font-size:22px;
+	margin-top:10%;
+	color:#40B6EC;
+	text-decoration:none;
+}
+
+.homered{
+	padding:30px 10px 12px 10px;
+}
+.divider{
+	background-color:blue;
+	height:7px;
+}
+.homeblack:hover{
+
+	border-bottom:2px solid #0A9FE4;
+
+}
+.image{
+	background-image:url(pictures/contactus.jpg);
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	
+}
+
+.info1{
+	height:145px;
+	font-size:25px;
+	background-color:lightgrey;
+	
+}
